@@ -5,3 +5,5 @@ Sample project to demonstrate that the system tracer writes durations and timest
 This is an empty app (`new project -> empty Activity` template of Android Studio) that calls `Debug.startMethodTracingSampling`, and after 1 second it calls `Debug.stopMethodTracing`, reads the trace file, parses the duration of the trace and throws if it's smaller than 10 milliseconds (it should be ~1 second).  
 
 Running the app on API 35 (or less) emulator works fine. Running on an emulator with API 36 crashes.
+
+Apk can be downloaded at https://github.com/stefanosiano/Api36TraceWrongMagnitude/releases/download/1/app-debug.apk
